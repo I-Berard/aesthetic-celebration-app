@@ -22,9 +22,9 @@ const Index = () => {
   }, []);
 
   return (
-    <div className="min-h-screen relative overflow-hidden bg-gradient-to-br from-pink-100 via-purple-50 to-yellow-100">
+    <div className="min-h-screen relative overflow-hidden bg-gradient-to-br from-blue-50 via-white to-purple-50">
       {/* Background Elements */}
-      <div className="absolute inset-0 bg-gradient-to-br from-pink-200/30 via-purple-200/30 to-yellow-200/30" />
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-100/20 via-purple-100/20 to-pink-100/20" />
       
       {/* Floating Elements */}
       <FloatingElements />
@@ -47,7 +47,7 @@ const Index = () => {
           {/* Action Buttons */}
           <div className="flex justify-center gap-4 pt-8">
             <Button 
-              className="bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white px-8 py-3 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+              className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-8 py-3 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
               onClick={() => setShowCelebration(!showCelebration)}
             >
               <Gift className="mr-2 h-5 w-5" />
@@ -56,7 +56,7 @@ const Index = () => {
             
             <Button 
               variant="outline"
-              className="border-2 border-pink-300 text-pink-600 hover:bg-pink-50 px-8 py-3 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+              className="border-2 border-blue-300 text-blue-600 hover:bg-blue-50 px-8 py-3 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
               onClick={() => {
                 setCandlesBlown(0);
                 setShowCelebration(true);

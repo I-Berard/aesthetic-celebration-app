@@ -19,16 +19,16 @@ const HeroSection = ({ showCelebration }: HeroSectionProps) => {
   return (
     <div className="relative text-center py-16 px-4">
       <div className={`transform transition-all duration-1000 ${textVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
-        <h1 className="text-6xl md:text-8xl font-bold bg-gradient-to-r from-pink-600 via-purple-600 to-yellow-500 bg-clip-text text-transparent mb-6 animate-pulse">
+        <h1 className="text-6xl md:text-8xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent mb-6 animate-pulse">
           Happy Birthday!
         </h1>
         
         <div className={`transform transition-all duration-1000 delay-300 ${textVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
-          <p className="text-2xl md:text-3xl text-gray-700 mb-4 font-light">
+          <p className="text-2xl md:text-3xl text-gray-800 mb-4 font-light">
             To Someone Very Special ✨
           </p>
           
-          <div className="flex justify-center items-center gap-2 text-lg text-gray-600">
+          <div className="flex justify-center items-center gap-2 text-lg text-gray-700">
             <span className="animate-bounce">🎂</span>
             <span>Make a wish and blow the candles!</span>
             <span className="animate-bounce">🎂</span>
