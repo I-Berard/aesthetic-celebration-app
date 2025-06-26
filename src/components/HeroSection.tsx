@@ -19,7 +19,7 @@ const HeroSection = ({ showCelebration }: HeroSectionProps) => {
   return (
     <div className="relative text-center py-16 px-4">
       <div className={`transform transition-all duration-1000 ${textVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
-        <h1 className="text-6xl md:text-8xl font-bold font-mono bg-gradient-to-r from-green-400 via-green-300 to-green-500 bg-clip-text text-transparent mb-6 animate-pulse drop-shadow-[0_0_20px_rgba(34,197,94,0.5)]">
+        <h1 className="text-2xl md:text-4xl font-bold font-mono bg-gradient-to-r from-green-400 via-green-300 to-green-500 bg-clip-text text-transparent mb-6 animate-pulse drop-shadow-[0_0_20px_rgba(34,197,94,0.5)]">
           CYBERKNIGHTS_WISHES_YOU_A_HAPPY_BELATED_BIRTHDAY
         </h1>
         
