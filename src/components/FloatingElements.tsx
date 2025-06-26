@@ -1,15 +1,15 @@
 
 const FloatingElements = () => {
-  const balloons = ['🎈', '🎈', '🎈', '🎈', '🎈'];
-  const gifts = ['🎁', '🎁', '🎁'];
+  const hackSymbols = ['💻', '⚡', '🔥', '💀', '🎯'];
+  const codeSymbols = ['{}', '</>', '01', '10', '>>'];
 
   return (
     <div className="absolute inset-0 pointer-events-none overflow-hidden">
-      {/* Floating Balloons */}
-      {balloons.map((balloon, index) => (
+      {/* Floating Hack Symbols */}
+      {hackSymbols.map((symbol, index) => (
         <div
           key={index}
-          className="absolute text-4xl animate-bounce"
+          className="absolute text-4xl animate-bounce text-green-400 drop-shadow-[0_0_10px_rgba(34,197,94,0.5)]"
           style={{
             left: `${10 + index * 20}%`,
             top: `${20 + (index % 2) * 10}%`,
@@ -17,15 +17,15 @@ const FloatingElements = () => {
             animationDuration: `${3 + index * 0.5}s`
           }}
         >
-          {balloon}
+          {symbol}
         </div>
       ))}
       
-      {/* Floating Gifts */}
-      {gifts.map((gift, index) => (
+      {/* Floating Code Symbols */}
+      {codeSymbols.map((code, index) => (
         <div
           key={index}
-          className="absolute text-3xl animate-pulse"
+          className="absolute text-3xl animate-pulse text-green-300/70 font-mono"
           style={{
             right: `${10 + index * 15}%`,
             bottom: `${20 + index * 15}%`,
@@ -33,15 +33,15 @@ const FloatingElements = () => {
             animationDuration: `${2 + index * 0.5}s`
           }}
         >
-          {gift}
+          {code}
         </div>
       ))}
       
-      {/* Floating Hearts */}
+      {/* Floating Matrix Numbers */}
       {[...Array(8)].map((_, index) => (
         <div
           key={index}
-          className="absolute text-pink-400 text-2xl animate-pulse"
+          className="absolute text-green-500/30 text-2xl animate-pulse font-mono"
           style={{
             left: `${Math.random() * 100}%`,
             top: `${Math.random() * 100}%`,
@@ -49,7 +49,7 @@ const FloatingElements = () => {
             animationDuration: `${2 + Math.random() * 2}s`
           }}
         >
-          💖
+          {Math.random() > 0.5 ? '1' : '0'}
         </div>
       ))}
     </div>
